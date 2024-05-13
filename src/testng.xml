@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SearchValidTests" verbose="1">
+    <test name="ValidTitle1">
+        <parameter name="Title" value="MacBook"/>
+        <classes>
+            <class name="SearchTests">
+                <methods>
+                    <include name="testValidSearch"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <test name="ValidTitle2">
+        <parameter name="Title" value="MacBook Air"/>
+        <classes>
+            <class name="SearchTests">
+                <methods>
+                    <include name="testValidSearch"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <test name="ValidTitle3">
+        <parameter name="Title" value="MacB"/>
+        <classes>
+            <class name="SearchTests">
+                <methods>
+                    <include name="testValidSearch"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
